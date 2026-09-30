@@ -160,6 +160,71 @@ function render() {
   $("all").setAttribute("aria-pressed", String(showAll));
 }
 
+function downloadPdf() {
+  const jsPDF = window.jspdf?.jsPDF;
+
+  if (!jsPDF) {
+    window.alert(
+      "Il PDF non può essere creato senza una connessione Internet.",
+    );
+    return;
+  }
+
+  const documentPdf = new jsPDF({ unit: "mm", format: "a4" });
+  const margin = 16;
+  const pageHeight = documentPdf.internal.pageSize.getHeight();
+  let y = 18;
+
+  documentPdf.setTextColor(25, 45, 39);
+  documentPdf.setFontSize(18);
+  documentPdf.text("Programma sport e attivita 4AI", margin, y);
+  y += 8;
+
+  documentPdf.setFontSize(11);
+  documentPdf.setTextColor(90, 105, 95);
+  documentPdf.text("Anno scolastico 2026-2027", margin, y);
+  y += 12;
+
+  documentPdf.setDrawColor(220, 226, 217);
+  documentPdf.line(margin, y, 194, y);
+  y += 10;
+
+  documentPdf.setTextColor(25, 45, 39);
+  documentPdf.setFontSize(11);
+
+  for (const lesson of lessons) {
+    if (y > pageHeight - 18) {
+      documentPdf.addPage();
+      y = 18;
+    }
+
+    const lessonDate = format(lesson.date, {
+      weekday: "long",
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    });
+    documentPdf.text(lessonDate, margin, y);
+    documentPdf.text(sports[lesson.sport].name, 145, y);
+    y += 7;
+  }
+
+  if (y > pageHeight - 35) {
+    documentPdf.addPage();
+    y = 18;
+  }
+
+  y += 7;
+  documentPdf.setFontSize(10);
+  documentPdf.setTextColor(90, 105, 95);
+  documentPdf.text(
+    "Sospensioni: 25 dicembre 2026, 1 gennaio, 26 marzo e 30 aprile 2027.",
+    margin,
+    y,
+  );
+  documentPdf.save("programma-sport-attivita-4AI-2026-2027.pdf");
+}
+
 $("upcoming").addEventListener("click", () => {
   showAll = false;
   render();
@@ -169,6 +234,8 @@ $("all").addEventListener("click", () => {
   showAll = true;
   render();
 });
+
+$("download-pdf").addEventListener("click", downloadPdf);
 
 render();
 setInterval(render, 60000);
