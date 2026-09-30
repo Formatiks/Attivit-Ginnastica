@@ -1,9 +1,100 @@
 <!doctype html>
-<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#142c26"><title>Venerdì in movimento · 2026–27</title><meta name="description" content="Il programma di educazione fisica del venerdì, secondo il calendario scolastico del Veneto 2026–27."><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
-<body><header><a class="brand" href="./"><span class="mark">v.</span> venerdì in movimento</a><span class="year">EDUCAZIONE FISICA <b>2026 / 27</b></span></header>
-<main><div class="intro"><div><span class="eyebrow">IL NOSTRO VENERDÌ, INSIEME</span><h1>Ci vediamo in palestra.</h1></div><span class="region">Veneto · Anno scolastico 2026–27</span></div>
-<section class="hero" aria-labelledby="activity"><div class="hero-copy"><div class="hero-top"><span id="week-status" class="pill"></span><span id="hero-date"></span></div><div><span class="eyebrow">ATTIVITÀ DELLA SETTIMANA</span><h2 id="activity"></h2><p id="description"></p></div><div class="hero-bottom"><span id="category"></span><button id="edit-current" class="light-button">Scegli attività</button></div></div><div class="hero-image"><img id="sport-image" alt=""><span class="image-caption" id="image-caption"></span></div></section>
-<section class="program" aria-labelledby="program-title"><div class="section-top"><div><span class="eyebrow">UN VENERDÌ ALLA VOLTA</span><h2 id="program-title">Il programma</h2></div><div class="view-tabs"><button id="upcoming" class="active">Da oggi</button><button id="all">Tutto l’anno</button></div></div><div class="program-info"><span id="count"></span><span>Seleziona una lezione per scegliere l’attività</span></div><div id="calendar"></div></section>
-<section class="calendar-note"><span class="note-icon">i</span><div><h3>La scuola si ferma. Noi riprendiamo dopo.</h3><p>Venerdì esclusi: 25 dicembre 2026, 1 gennaio, 26 marzo e 30 aprile 2027. Ultima lezione: 4 giugno 2027.</p><p>Calendario aggiornato alla DGR 712 del 7 luglio 2026. Il 30 ottobre è giorno di lezione. Eventuali chiusure della scuola e la festa del patrono vanno aggiunte dal docente.</p><a href="https://www.regione.veneto.it/article-detail?articleGroupId=3059728&articleId=3061491" target="_blank" rel="noopener">Calendario ufficiale della Regione Veneto</a></div></section>
-<footer><span>venerdì in movimento <b>·</b> 2026–27</span><span>Le scelte si salvano solo in questo browser.</span></footer></main>
-<dialog id="editor"><form id="edit-form"><div class="dialog-top"><span class="eyebrow">ORGANIZZA LA LEZIONE</span><button type="button" id="close" aria-label="Chiudi">×</button></div><h2 id="edit-date"></h2><label for="sport-select">Attività</label><select id="sport-select"></select><label for="skip"><input type="checkbox" id="skip"> Nessuna lezione (patrono o chiusura della scuola)</label><p class="save-note">La modifica sarà visibile solo su questo dispositivo e browser.</p><button class="save" type="submit">Salva lezione</button></form></dialog><div id="toast" role="status"></div></body></html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#142c26" />
+    <title>Programma sport e attività 4AI · anno 2026–2027</title>
+    <meta
+      name="description"
+      content="Il programma di educazione fisica del venerdì, secondo il calendario scolastico del Veneto 2026–2027."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="./">
+        <span class="mark">4AI</span>
+        <span class="brand-title">Programma sport e attività<br />4AI</span>
+      </a>
+      <span class="year">EDUCAZIONE FISICA <b>2026 / 2027</b></span>
+    </header>
+
+    <main>
+      <div class="intro">
+        <div>
+          <span class="eyebrow">PROGRAMMA SPORT E ATTIVITÀ · 4AI</span>
+          <h1>Sport e attività, insieme.</h1>
+        </div>
+        <span class="region">Anno scolastico 2026–2027</span>
+      </div>
+
+      <section class="hero" aria-labelledby="activity">
+        <div class="hero-copy">
+          <div class="hero-top">
+            <span id="week-status" class="pill"></span>
+            <span id="hero-date"></span>
+          </div>
+          <div>
+            <span class="eyebrow">ATTIVITÀ DELLA SETTIMANA · 4AI</span>
+            <h2 id="activity"></h2>
+            <p id="description"></p>
+          </div>
+          <div class="hero-bottom">
+            <span id="category"></span>
+            <span class="fixed-plan">Programma definito dal docente</span>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img id="sport-image" alt="" />
+          <span class="image-caption" id="image-caption"></span>
+        </div>
+      </section>
+
+      <section class="program" aria-labelledby="program-title">
+        <div class="section-top">
+          <div>
+            <span class="eyebrow">UN'ATTIVITÀ ALLA VOLTA</span>
+            <h2 id="program-title">Il programma</h2>
+          </div>
+          <div class="view-tabs">
+            <button id="upcoming" class="active">Da oggi</button>
+            <button id="all">Tutto l’anno</button>
+          </div>
+        </div>
+        <div class="program-info">
+          <span id="count"></span>
+          <span>Programma stabilito dal docente</span>
+        </div>
+        <div id="calendar"></div>
+      </section>
+
+      <section class="calendar-note">
+        <span class="note-icon">i</span>
+        <div>
+          <h3>La scuola si ferma. Noi riprendiamo dopo.</h3>
+          <p>
+            Venerdì esclusi: 25 dicembre 2026, 1 gennaio, 26 marzo e 30 aprile
+            2027. Ultima lezione: 4 giugno 2027.
+          </p>
+          <p>
+            Calendario aggiornato alla DGR 712 del 7 luglio 2026. Il 30 ottobre
+            è giorno di lezione. Eventuali chiusure della scuola verrano segnate nel calendario con anticipo.
+          </p>
+          <a
+            href="https://www.regione.veneto.it/article-detail?articleGroupId=3059728&articleId=3061491"
+            target="_blank"
+            rel="noopener"
+            >Calendario ufficiale della Regione Veneto</a
+          >
+        </div>
+      </section>
+
+      <footer>
+        <span>Programma sport e attività <b>·</b> 4AI · 2026–2027</span>
+        <span>Le attività sono definite nel codice del programma.</span>
+      </footer>
+    </main>
+  </body>
+</html>

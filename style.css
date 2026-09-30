@@ -1,2 +1,577 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
-:root{font-family:'DM Sans',sans-serif;color:#192d27;background:#f5f6f3;font-synthesis:none}*{box-sizing:border-box}body{margin:0}button,select{font:inherit}button,a,select{ -webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit}header{height:100px;border-bottom:1px solid #dde2dc;padding:0 5.5%;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-weight:700;text-decoration:none;font-size:18px;letter-spacing:-.6px}.mark{width:40px;height:40px;border-radius:12px;background:#193c30;color:#d6f078;display:grid;place-items:center;font-size:27px}.year{font-size:12px;letter-spacing:1.4px;display:flex;align-items:center;gap:20px}.year b{background:#e9ece5;padding:10px 14px;border-radius:20px;font-weight:500;letter-spacing:0;font-size:14px}main{max-width:1440px;margin:auto;padding:46px 5.5% 0}.intro{display:flex;align-items:end;justify-content:space-between;margin-bottom:29px}.eyebrow{font-size:12px;letter-spacing:1.6px;font-weight:700}h1{font-family:Manrope,sans-serif;font-size:clamp(28px,3vw,42px);font-weight:600;letter-spacing:-1.6px;margin:9px 0 0}.region{font-size:14px;color:#657269;padding-bottom:6px}.hero{display:grid;grid-template-columns:1fr 1fr;border-radius:24px;overflow:hidden;min-height:450px;background:#193c30;color:#fff}.hero-copy{padding:34px 38px;display:flex;flex-direction:column;justify-content:space-between;gap:38px}.hero-top{display:flex;align-items:center;justify-content:space-between;gap:15px;font-size:14px;color:#dee5da}.pill{background:#d6f078;color:#193c30;padding:8px 13px;border-radius:24px;font-weight:700}.hero-copy .eyebrow{color:#b8c9bc;font-size:12px}.hero h2{font-family:Manrope,sans-serif;font-size:clamp(42px,5.4vw,74px);line-height:1.1;letter-spacing:-3px;font-weight:500;margin:15px 0 20px}.hero p{max-width:350px;color:#e0e7de;font-size:16px;line-height:1.7;margin:0}.hero-bottom{display:flex;align-items:center;justify-content:space-between;font-size:14px;gap:12px}.light-button{border:1px solid #879a8c;color:white;background:transparent;padding:11px 17px;border-radius:25px}.light-button:hover{background:#ffffff18}.hero-image{position:relative;min-height:400px;background:#2f4b3a}.hero-image img{width:100%;height:100%;position:absolute;object-fit:cover}.hero-image:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#0007,transparent 40%)}.image-caption{position:absolute;z-index:1;bottom:25px;left:28px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase}.program{margin-top:55px}.section-top{display:flex;align-items:center;justify-content:space-between}.section-top h2{font-family:Manrope;font-size:30px;letter-spacing:-1px;font-weight:600;margin:8px 0 0}.section-top .eyebrow{color:#6a776e}.view-tabs{display:flex;border:1px solid #d9dfd7;border-radius:26px;padding:4px;background:white}.view-tabs button{border:0;border-radius:22px;padding:10px 20px;background:transparent;color:#58675d;font-size:14px}.view-tabs .active{background:#193c30;color:white}.program-info{display:flex;justify-content:space-between;font-size:14px;color:#647268;margin:25px 0 20px}.month-title{font-size:14px;text-transform:uppercase;letter-spacing:1.4px;font-weight:600;margin:29px 0 14px}.month-title span{color:#849084;margin-left:8px;font-weight:400}.lesson-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.lesson{background:#fff;text-align:left;border:1px solid #dce2d9;border-radius:16px;padding:20px;min-height:153px;color:inherit;transition:transform .15s,border-color .15s}.lesson:hover{transform:translateY(-3px);border-color:#6d8877}.lesson.current{background:#eaf1dc;border-color:#8aa657}.lesson.skipped{background:#edeFEB;color:#667066}.lesson-top{display:flex;justify-content:space-between;align-items:center;gap:10px}.lesson-date{font-size:28px;letter-spacing:-1px;font-weight:500}.lesson-date small{font-size:12px;color:#788277;letter-spacing:0;margin-left:6px}.lesson-tag{font-size:12px;background:#193c30;color:white;padding:5px 8px;border-radius:20px}.lesson-name{display:block;font-size:18px;font-weight:500;margin-top:22px}.lesson-category{display:block;font-size:12px;color:#6d7b70;margin-top:6px}.calendar-note{display:flex;gap:20px;background:#eaeEE6;border-radius:18px;padding:27px 30px;margin-top:45px}.note-icon{border:1px solid #7d8a79;border-radius:50%;width:25px;height:25px;flex-shrink:0;display:grid;place-items:center;font-size:14px}.calendar-note h3{font-size:16px;margin:1px 0 10px;font-weight:600}.calendar-note p{font-size:14px;line-height:1.7;color:#63715f;margin:6px 0}.calendar-note a{font-size:14px;text-underline-offset:4px}footer{display:flex;justify-content:space-between;color:#6b786c;font-size:12px;padding:35px 0;margin-top:15px;border-top:1px solid #dee3d9}footer b{margin:0 8px}dialog{border:0;border-radius:22px;width:440px;max-width:calc(100% - 32px);padding:30px;color:#193c30;background:#f7f8f4}dialog::backdrop{background:#142c2680;backdrop-filter:blur(5px)}.dialog-top{display:flex;align-items:center;justify-content:space-between}.dialog-top button{border:0;background:none;font-size:28px;color:#193c30}dialog h2{font-size:25px;letter-spacing:-.6px;margin:14px 0 25px}dialog label{display:block;font-size:14px;margin:17px 0 9px}select{width:100%;padding:14px;border-radius:10px;border:1px solid #c5cfc0;background:white;color:#193c30}input[type=checkbox]{accent-color:#193c30}.save-note{font-size:13px;color:#6b7667;line-height:1.6}.save{width:100%;padding:14px;border:0;background:#193c30;color:white;border-radius:25px;margin-top:15px}#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#193c30;color:white;padding:14px 22px;border-radius:25px;display:none;z-index:5;font-size:14px}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #7c9d37;outline-offset:4px}@media(max-width:850px){header{height:80px}.year{font-size:0;gap:0}.region{display:none}.hero-copy{padding:28px}.hero{min-height:410px}.hero-top{align-items:start;flex-direction:column}.lesson-grid{grid-template-columns:repeat(3,1fr)}.hero h2{letter-spacing:-2px}}@media(max-width:600px){header{padding:0 20px}.brand{font-size:15px}.year b{font-size:12px;padding:8px}main{padding:30px 20px 0}.hero{grid-template-columns:1fr}.hero-copy{min-height:360px;gap:30px}.hero-top{flex-direction:row;align-items:center}.hero h2{font-size:52px}.hero-image{min-height:260px}.intro{margin-bottom:24px}h1{letter-spacing:-1px}.program{margin-top:36px}.section-top{align-items:end;gap:12px}.section-top h2{font-size:25px}.section-top .eyebrow{font-size:10px}.view-tabs button{padding:9px 12px;font-size:12px}.program-info{font-size:12px;gap:20px;line-height:1.5}.program-info span:last-child{max-width:155px;text-align:right}.lesson-grid{grid-template-columns:repeat(2,1fr)}.lesson{padding:16px;min-height:145px}.lesson-name{font-size:16px}.calendar-note{padding:22px;gap:14px}footer{flex-direction:column;gap:12px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #192d27;
+  background: #f5f6f3;
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+select {
+  font: inherit;
+}
+button,
+a,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  cursor: pointer;
+}
+a {
+  color: inherit;
+}
+header {
+  height: 100px;
+  border-bottom: 1px solid #dde2dc;
+  padding: 0 5.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: -0.6px;
+}
+.brand-title {
+  line-height: 1.15;
+}
+.mark {
+  width: 54px;
+  height: 40px;
+  border-radius: 12px;
+  background: #193c30;
+  color: #d6f078;
+  display: grid;
+  place-items: center;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}
+.year {
+  font-size: 12px;
+  letter-spacing: 1.4px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.year b {
+  background: #e9ece5;
+  padding: 10px 14px;
+  border-radius: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  font-size: 14px;
+}
+main {
+  max-width: 1440px;
+  margin: auto;
+  padding: 46px 5.5% 0;
+}
+.intro {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 29px;
+}
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 1.6px;
+  font-weight: 700;
+}
+h1 {
+  font-family: Manrope, sans-serif;
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 600;
+  letter-spacing: -1.6px;
+  margin: 9px 0 0;
+}
+.region {
+  font-size: 14px;
+  color: #657269;
+  padding-bottom: 6px;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 24px;
+  overflow: hidden;
+  min-height: 450px;
+  background: #193c30;
+  color: #fff;
+}
+.hero-copy {
+  padding: 34px 38px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-items: stretch;
+  gap: 38px;
+}
+.hero-copy > div:nth-child(2) {
+  align-self: center;
+  width: 100%;
+  max-width: 560px;
+}
+.hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 14px;
+  color: #dee5da;
+}
+.hero-top span:last-child {
+  text-align: right;
+}
+.pill {
+  background: #d6f078;
+  color: #193c30;
+  padding: 8px 13px;
+  border-radius: 24px;
+  font-weight: 700;
+}
+.hero-copy .eyebrow {
+  color: #b8c9bc;
+  font-size: 12px;
+}
+.hero h2 {
+  font-family: Manrope, sans-serif;
+  font-size: clamp(42px, 5.4vw, 74px);
+  line-height: 1.1;
+  letter-spacing: -3px;
+  font-weight: 500;
+  margin: 15px 0 20px;
+}
+.hero p {
+  max-width: 350px;
+  color: #e0e7de;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+}
+.hero-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  gap: 12px;
+}
+.hero-bottom > span:first-child {
+  min-width: 0;
+}
+.fixed-plan {
+  color: #b8c9bc;
+  font-size: 12px;
+  text-align: right;
+}
+.hero-image {
+  position: relative;
+  min-height: 400px;
+  background: #2f4b3a;
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+.hero-image:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, #0007, transparent 40%);
+}
+.image-caption {
+  position: absolute;
+  z-index: 1;
+  bottom: 25px;
+  left: 28px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.program {
+  margin-top: 55px;
+}
+.section-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-top h2 {
+  font-family: Manrope;
+  font-size: 30px;
+  letter-spacing: -1px;
+  font-weight: 600;
+  margin: 8px 0 0;
+}
+.section-top .eyebrow {
+  color: #6a776e;
+}
+.view-tabs {
+  display: flex;
+  border: 1px solid #d9dfd7;
+  border-radius: 26px;
+  padding: 4px;
+  background: white;
+}
+.view-tabs button {
+  border: 0;
+  border-radius: 22px;
+  padding: 10px 20px;
+  background: transparent;
+  color: #58675d;
+  font-size: 14px;
+}
+.view-tabs .active {
+  background: #193c30;
+  color: white;
+}
+.program-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #647268;
+  margin: 25px 0 20px;
+}
+.month-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-weight: 600;
+  margin: 29px 0 14px;
+}
+.month-title span {
+  color: #849084;
+  margin-left: 8px;
+  font-weight: 400;
+}
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.lesson {
+  background: #fff;
+  text-align: left;
+  border: 1px solid #dce2d9;
+  border-radius: 16px;
+  padding: 20px;
+  min-height: 153px;
+  color: inherit;
+  transition:
+    transform 0.15s,
+    border-color 0.15s;
+}
+.lesson:hover {
+  transform: translateY(-3px);
+  border-color: #6d8877;
+}
+.lesson.current {
+  background: #eaf1dc;
+  border-color: #8aa657;
+}
+.lesson.skipped {
+  background: #edefeb;
+  color: #667066;
+}
+.lesson-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.lesson-date {
+  font-size: 28px;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+.lesson-date small {
+  font-size: 12px;
+  color: #788277;
+  letter-spacing: 0;
+  margin-left: 6px;
+}
+.lesson-tag {
+  font-size: 12px;
+  background: #193c30;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 20px;
+}
+.lesson-name {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 22px;
+}
+.lesson-category {
+  display: block;
+  font-size: 12px;
+  color: #6d7b70;
+  margin-top: 6px;
+}
+.calendar-note {
+  display: flex;
+  gap: 20px;
+  background: #eaeee6;
+  border-radius: 18px;
+  padding: 27px 30px;
+  margin-top: 45px;
+}
+.note-icon {
+  border: 1px solid #7d8a79;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+}
+.calendar-note h3 {
+  font-size: 16px;
+  margin: 1px 0 10px;
+  font-weight: 600;
+}
+.calendar-note p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #63715f;
+  margin: 6px 0;
+}
+.calendar-note a {
+  font-size: 14px;
+  text-underline-offset: 4px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: #6b786c;
+  font-size: 12px;
+  padding: 35px 0;
+  margin-top: 15px;
+  border-top: 1px solid #dee3d9;
+}
+footer b {
+  margin: 0 8px;
+}
+button:focus-visible,
+a:focus-visible,
+select:focus-visible {
+  outline: 3px solid #7c9d37;
+  outline-offset: 4px;
+}
+@media (max-width: 850px) {
+  header {
+    height: 80px;
+    padding: 0 4%;
+  }
+  .year {
+    font-size: 0;
+    gap: 0;
+  }
+  .region {
+    display: none;
+  }
+  .hero-copy {
+    padding: 28px;
+  }
+  .hero {
+    min-height: 410px;
+  }
+  .hero-top {
+    align-items: start;
+    flex-direction: column;
+  }
+  .lesson-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero h2 {
+    letter-spacing: -2px;
+  }
+  .program-info {
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    height: 76px;
+    padding: 0 16px;
+    gap: 12px;
+  }
+  .brand {
+    min-width: 0;
+    gap: 9px;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+  }
+  .brand-title {
+    max-width: 190px;
+  }
+  .mark {
+    width: 44px;
+    height: 36px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .year {
+    flex-shrink: 0;
+    font-size: 0;
+  }
+  .year b {
+    display: block;
+    font-size: 10px;
+    padding: 7px 8px;
+    white-space: nowrap;
+  }
+  main {
+    padding: 25px 16px 0;
+  }
+  .intro {
+    align-items: flex-start;
+  }
+  .intro .eyebrow {
+    display: block;
+    max-width: 260px;
+    line-height: 1.45;
+  }
+  h1 {
+    max-width: 300px;
+    font-size: 32px;
+    line-height: 1.12;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    border-radius: 18px;
+  }
+  .hero-copy {
+    min-height: 335px;
+    padding: 24px 22px;
+    gap: 24px;
+  }
+  .hero-top {
+    flex-direction: row;
+    align-items: center;
+  }
+  .hero h2 {
+    max-width: 300px;
+    font-size: 44px;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin: 13px 0 16px;
+  }
+  .hero p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .hero-bottom {
+    align-items: flex-end;
+    font-size: 13px;
+  }
+  .fixed-plan {
+    max-width: 130px;
+    line-height: 1.35;
+  }
+  .hero-image {
+    min-height: 220px;
+  }
+  .intro {
+    margin-bottom: 24px;
+  }
+  h1 {
+    letter-spacing: -1px;
+  }
+  .program {
+    margin-top: 40px;
+  }
+  .section-top {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .section-top h2 {
+    font-size: 25px;
+  }
+  .section-top .eyebrow {
+    font-size: 10px;
+  }
+  .view-tabs button {
+    min-height: 40px;
+    padding: 9px 16px;
+    font-size: 13px;
+  }
+  .program-info {
+    margin: 20px 0 16px;
+    font-size: 12px;
+  }
+  .program-info {
+    font-size: 12px;
+    gap: 20px;
+    line-height: 1.5;
+  }
+  .program-info span:last-child {
+    max-width: 155px;
+    text-align: right;
+  }
+  .lesson-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 9px;
+  }
+  .lesson {
+    min-height: 137px;
+    padding: 14px;
+    border-radius: 13px;
+  }
+  .lesson-date {
+    font-size: 24px;
+  }
+  .lesson-date small {
+    display: block;
+    margin: 2px 0 0;
+    font-size: 10px;
+  }
+  .lesson-name {
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  .lesson-category {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+  .calendar-note {
+    padding: 19px;
+    gap: 14px;
+    border-radius: 15px;
+  }
+  .calendar-note h3 {
+    font-size: 15px;
+    line-height: 1.35;
+  }
+  .calendar-note p,
+  .calendar-note a {
+    font-size: 13px;
+    line-height: 1.55;
+  }
+  footer {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}

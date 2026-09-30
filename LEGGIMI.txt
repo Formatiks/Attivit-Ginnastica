@@ -1,10 +1,10 @@
-VENERDÌ IN MOVIMENTO
+PROGRAMMA SPORT E ATTIVITÀ 4AI · 2026–2027
 
 Per aprire il sito, estrai tutto lo ZIP e apri index.html con il browser.
 I file index.html, style.css e app.js devono restare nella stessa cartella.
 
 Serve una connessione Internet per caricare le foto sportive da Unsplash e i font da Google Fonts.
-Le attività scelte si salvano nel browser e non vengono condivise con altri dispositivi.
+Le attività sono definite dal programmatore nel file app.js e non possono essere modificate dagli utenti.
 
 Per pubblicarlo su un hosting statico, carica tutti e tre i file nella stessa cartella.
-Il calendario segue la Regione Veneto 2026–27, aggiornamento DGR 712 del 7 luglio 2026.
+Il calendario segue la Regione Veneto 2026–2027, aggiornamento DGR 712 del 7 luglio 2026.
