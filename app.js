@@ -35,6 +35,15 @@ const sports = [
       "https://images.unsplash.com/photo-1564226803380-91139fdcb4d0?auto=format&fit=crop&w=1200&q=85",
     alt: "Volano bianco per il badminton",
   },
+  {
+    name: "Hockey",
+    category: "Sport di squadra",
+    description:
+      "Passaggi, controllo e gioco di squadra. Un venerdì per lavorare velocità, precisione e collaborazione.",
+    image:
+      "https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=1200&q=85",
+    alt: "Giocatori di hockey in campo durante una partita",
+  },
 ];
 
 const closures = {
@@ -45,10 +54,12 @@ const closures = {
 };
 
 // Modificare questa sequenza per scegliere il programma dell'intero anno.
-const activityPlan = [0, 1, 2, 3];
+// Venerdì 2 ottobre 2026: Badminton, Hockey, Calcio, Pallavolo, Basket.
+const activityPlan = [3, 4, 2, 0, 1];
 const lessons = [];
 const firstLesson = new Date("2026-09-11T12:00:00Z");
 const lastLesson = new Date("2027-06-08T12:00:00Z");
+const cycleStartIndex = 3; // 2 ottobre 2026 è il 4° venerdì dall'inizio del calendario
 
 for (
   let date = firstLesson, index = 0;
@@ -60,7 +71,11 @@ for (
   if (!closures[dateKey]) {
     lessons.push({
       date: dateKey,
-      sport: activityPlan[index % activityPlan.length],
+      sport:
+        activityPlan[
+          (index - cycleStartIndex + activityPlan.length) %
+            activityPlan.length
+        ],
       skip: false,
     });
   }
